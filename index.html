@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <style>
+      .nav-item:hover {
+        background-color: blue;
+        border-radius: 8px;
+      }
+      .nav-link:hover {
+        color: white;
+      }
+      img {
+        height: 18vh;
+        width: 400px;
+        border-radius: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Name, Description, Photo -->
+    <div class="container my-5">
+      <div class="row">
+        <div class="col">
+          <!-- Name & description -->
+          <h1>Balamurugan R</h1>
+          <a
+            href="http://mailto:bmthedev@gmail.com"
+            class="btn btn-sm btn-outline-secondary mb-2"
+            target="_blank"
+            >bmthedev@gmail.com</a
+          >
+          <p class="lead">Full Stack Developer | DevOps Engineer</p>
+        </div>
+
+        <div class="col">
+          <!-- Photo -->
+          <img
+            src="Photo.jpg"
+            alt="BM Photo"
+            style="width:100px; height:100px border-radius:50%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- nav bar -->
+    <div class="container">
+      <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Work Experience & Skills -->
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Work Experience -->
+        <div class="col">
+          <h3 class="mb-3">Work Experience</h3>
+
+          <!-- Capgemini -->
+          <div class="card mb-3">
+            <div class="card-body mx-3">
+              <h4>Capgemini</h4>
+              <div>
+                <strong>Nov'21-Current</strong>
+              </div>
+              Software Engineer trained on various technologies like Java
+              Enterprise Edition, DevOps with Cloud AWS
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">J2EE</li>
+                <li class="list-group-item">Spring Boot</li>
+                <li class="list-group-item">Docker & Kubernetes</li>
+                <li class="list-group-item">Amazon Web Services</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Kauvery Hospital -->
+          <div class="card mb-3">
+            <div class="card-body mx-3">
+              <h4>Kauvery Hospital</h4>
+              <div>
+                <strong>Apr'21-May'21</strong>
+              </div>
+              ensuring the flow in all the processes of Supply Chain Management,
+              worked in Excel
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">CAPEX</li>
+                <li class="list-group-item">Ms-Excel</li>
+                <li class="list-group-item">Pivot Table</li>
+                <li class="list-group-item">HIS</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills -->
+        <div class="col">
+          <h3 class="mb-3">Skills</h3>
+          <div class="card mb-3 text-bg-success">
+            <div class="card-body mx-3">
+              <h3>Front End</h3>
+              <ul>
+                <li>HTML & CSS</li>
+                <li>Vanilla Javascript</li>
+                <li>Bootstrap</li>
+                <li>Angular</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Back End -->
+          <div class="card mb-3 text-bg-dark">
+            <div class="card-body mx-3">
+              <h3>Back End</h3>
+              <ul>
+                <li>Java</li>
+                <li>Python</li>
+                <li>Oracle, MySQL</li>
+                <li>API's</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card mb-3 text-bg-primary">
+            <div class="card-body mx-3">
+              <h3>DevOps</h3>
+              <ul>
+                <li>Docker & Kubernetes</li>
+                <li>Git & GitHub</li>
+                <li>Jenkins</li>
+                <li>Ansible</li>
+                <li>Terraform</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Previous Projects -->
+    <div class="container mt-5" id="projects">
+      <h3>Previous Projects</h3>
+      <div class="row mt-4">
+        <!-- Bug Tracking -->
+        <div class="col-lg-3">
+          <div class="card mb-3" style="height: 22rem">
+            <img
+            src="https://www.cognizantsoftvision.com/wp-content/uploads/2021/02/09201819/image1.jpg"
+            alt="Project Image" class="card-img-top style="height: 11.2rem;">
+            <div class="card-body">
+              <h5 class="card-title">Bug Tracking</h5>
+              <p class="card-text">Employee and Admin managed Bug Tracking</p>
+              <button
+                class="btn btn-outline-danger"
+                type="submit"
+                onsubmit="https://youtu.be/WheMiWbkSoE"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- YouTube Channel -->
+        <div class="col-lg-3">
+          <div class="card mb-3" style="height: 22rem">
+            <img
+              src="https://blog.ipleaders.in/wp-content/uploads/2020/12/YouTube-2.png"
+              alt="Project Image"
+              class="card-img-top"
+              style="height: 11.2rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">YouTube Channel</h5>
+              <p class="card-text">Coding and General Knowledge</p>
+              <button
+                class="btn btn-outline-danger"
+                type="submit"
+                onsubmit="https://youtu.be/WheMiWbkSoE"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Portfolio Project -->
+        <!-- <div class="col-lg-3">
+          <div class="card mb-3" style="height: 22rem;">
+            <img src="https://colorlib.com/cdn-cgi/image/width=1100,height=860,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/sites/2/selfer-dark-wordpress-theme.jpg" alt="Project Image" class="card-img-top" style="height: 11.2rem;">
+            <div class="card-body">
+              <h5 class="card-title">Portfolio</h5>
+              <p class="card-text">Live hosted on GitHub</p>
+              <button class="btn btn-outline-danger" type="submit" onsubmit="https://youtu.be/WheMiWbkSoE">View Project</button>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- EasyKart -->
+        <div class="col-lg-3">
+          <div class="card mb-3" style="height: 22rem">
+            <img
+              src="https://s.tmimgcdn.com/scr/800x500/126100/ecommerce-logo-template_126133-original.png"
+              alt="Project Image"
+              class="card-img-top"
+              style="height: 11.2rem"
+            />
+            <div class="card-body">
+              <h5 class="card-title">EasyKart</h5>
+              <p class="card-text">
+                e-Commerce Application developed using Java
+              </p>
+              <button
+                class="btn btn-outline-danger"
+                type="submit"
+                onsubmit="https://youtu.be/WheMiWbkSoE"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- IoT -->
+        <div class="col-lg-3">
+          <div class="card mb-3" style="height: 22rem">
+            <img
+              src="https://circuitdigest.com/sites/default/files/projectimage_mic/IoT-based-Patient-Monitoring-System-using-ESP8266-and-Arduino.jpg"
+              alt="Project Image"
+              class="card-img-top"
+            />
+            <div class="card-body" style="height: 11.2rem">
+              <h5 class="card-title">IoT Project</h5>
+              <p class="card-text">Automatic Health Monitoring System</p>
+              <button
+                class="btn btn-outline-danger"
+                type="submit"
+                onsubmit="https://youtu.be/WheMiWbkSoE"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- nav bar -->
+    <div class="container my-5">
+      <nav>
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
