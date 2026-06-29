@@ -14,7 +14,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--night); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+body { margin: 0; overflow-x: hidden; background: var(--night); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
 body.menu-open { overflow: hidden; }
 a { color: inherit; text-decoration: none; }
 img { display: block; max-width: 100%; }
@@ -208,9 +208,9 @@ button { font: inherit; }
   .post-feature .post-art { height: 100%; min-height: 330px; border-bottom: 0; border-right: 1px solid var(--line); }
 }
 
-@media (max-width: 720px) {
-  :root { --shell: min(100% - 32px, 1180px); }
-  .nav-wrap { min-height: 70px; }
+/* Tablet portrait, including the Galaxy Tab S9 FE's common 800px CSS viewport. */
+@media (max-width: 860px) {
+  .nav-wrap { min-height: 74px; }
   .menu-toggle { position: relative; z-index: 2; display: grid; gap: 7px; padding: 10px 0 10px 14px; }
   .menu-toggle > span:not(.sr-only) { display: block; width: 25px; height: 1px; background: currentColor; transition: transform .2s; }
   .menu-toggle[aria-expanded="true"] > span:first-child { transform: translateY(4px) rotate(45deg); }
@@ -218,6 +218,20 @@ button { font: inherit; }
   .site-nav { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 80px 10vw; background: #081411; font-size: 28px; transform: translateX(100%); transition: transform .3s ease; }
   .site-nav.open { transform: none; }
   .nav-cta { margin-top: 20px; font-size: 16px; }
+  .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 38px; }
+  .contact-copy { max-width: 560px; }
+  .career-entry { grid-template-columns: 52px 1fr; }
+  .career-marker { grid-row: 1 / span 2; }
+  .career-meta { grid-column: 2; padding: 44px 7% 0; border-right: 0; }
+  .career-details { grid-column: 2; padding: 24px 7% 55px; }
+  .career-marker::before { top: 49px; }
+  .career-marker span { top: 69px; }
+  .education-row { padding-left: 52px; }
+}
+
+@media (max-width: 720px) {
+  :root { --shell: min(100% - 32px, 1180px); }
+  .nav-wrap { min-height: 70px; }
   .hero { min-height: 0; padding: 125px 0 110px; }
   .hero-layout { gap: 60px; }
   .hero h1 { font-size: clamp(43px, 13vw, 66px); }
@@ -255,6 +269,38 @@ button { font: inherit; }
   .contact-section { padding: 90px 0; }
   .footer-grid { grid-template-columns: 1fr auto; }
   .footer-grid .mono { display: none; }
+}
+
+@media (max-width: 480px) {
+  .brand { font-size: 13px; }
+  .hero h1 { font-size: clamp(39px, 12.5vw, 54px); }
+  .hero-actions { align-items: stretch; }
+  .button { width: 100%; }
+  .hero-visual { padding-inline: 6px; }
+  .portrait-frame { width: 88%; }
+  .portrait-card { left: -10px; width: min(220px, 78vw); }
+  .terminal-card { width: 94%; }
+  .section h2, .contact-section h2 { font-size: clamp(34px, 11vw, 46px); }
+  .principle, .expertise-card { padding: 27px; }
+  .post-body { padding: 23px; }
+  .post-feature h3 { font-size: 23px; }
+  .career-entry { grid-template-columns: 38px 1fr; }
+  .career-meta { padding-inline: 8%; }
+  .career-marker::before { width: 11px; height: 11px; }
+  .education-row { padding-left: 38px; }
+  .footer-links { gap: 13px; }
+}
+
+/* Keep the hero comfortable on shorter laptop displays. */
+@media (min-width: 981px) and (max-height: 820px) {
+  .hero { min-height: 740px; padding-block: 100px 55px; }
+  .hero-layout { gap: 50px; }
+  .hero h1 { font-size: clamp(48px, 4.8vw, 68px); }
+  .hero-lede { margin-top: 22px; font-size: 16px; }
+  .hero-actions { margin-top: 28px; }
+  .quick-stack { margin-top: 28px; }
+  .portrait-frame { width: min(100%, 325px); }
+  .terminal-card { width: 290px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
