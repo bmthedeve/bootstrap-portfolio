@@ -1,285 +1,358 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BM Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
+    <meta
+      name="description"
+      content="Balamurugan R — DevOps engineer focused on dependable infrastructure, delivery automation, and cloud platforms."
     />
-    <style>
-      .nav-item:hover {
-        background-color: blue;
-        border-radius: 8px;
-      }
-      .nav-link:hover {
-        color: white;
-      }
-      img {
-        height: 18vh;
-        width: 400px;
-        border-radius: 10%;
-      }
-    </style>
+    <meta name="theme-color" content="#081411" />
+    <title>Balamurugan R — DevOps Engineer</title>
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&amp;family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <!-- Name, Description, Photo -->
-    <div class="container my-5">
-      <div class="row">
-        <div class="col">
-          <!-- Name & description -->
-          <h1>Balamurugan R</h1>
-          <a
-            href="http://mailto:bmthedev@gmail.com"
-            class="btn btn-sm btn-outline-secondary mb-2"
-            target="_blank"
-            >bmthedev@gmail.com</a
-          >
-          <p class="lead">Full Stack Developer | DevOps Engineer</p>
-        </div>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-        <div class="col">
-          <!-- Photo -->
-          <img
-            src="Photo.jpg"
-            alt="BM Photo"
-            style="width:100px; height:100px border-radius:50%"
-          />
-        </div>
+    <header class="site-header" data-header>
+      <div class="shell nav-wrap">
+        <a class="brand" href="#home" aria-label="Balamurugan R, home">
+          <span class="brand-mark">BR</span>
+          <span>Balamurugan R</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span>
+          <span class="sr-only">Toggle navigation</span>
+        </button>
+
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#career">Career</a>
+          <a href="#blog">Blog</a>
+          <a class="nav-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+        </nav>
       </div>
-    </div>
+    </header>
 
-    <!-- nav bar -->
-    <div class="container">
-      <nav>
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
-        </ul>
-      </nav>
-    </div>
+    <main id="main">
+      <section id="home" class="hero section-grid">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="shell hero-layout">
+          <div class="hero-copy reveal">
+            <p class="eyebrow"><span class="status-dot"></span> DevOps engineer · India</p>
+            <h1>I turn complex infrastructure into <span>calm, repeatable systems.</span></h1>
+            <p class="hero-lede">
+              I build reliable cloud platforms, automate delivery, and make the path from commit to
+              production safer for everyone using it.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#career">Explore my work <span aria-hidden="true">↓</span></a>
+              <a class="button button-ghost" href="https://www.linkedin.com/in/bm-r/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+            </div>
+            <ul class="quick-stack" aria-label="Core technologies">
+              <li>AWS</li><li>Kubernetes</li><li>Terraform</li><li>Jenkins</li><li>Ansible</li>
+            </ul>
+          </div>
 
-    <!-- Work Experience & Skills -->
-    <div class="container mt-5">
-      <div class="row">
-        <!-- Work Experience -->
-        <div class="col">
-          <h3 class="mb-3">Work Experience</h3>
-
-          <!-- Capgemini -->
-          <div class="card mb-3">
-            <div class="card-body mx-3">
-              <h4>Capgemini</h4>
-              <div>
-                <strong>Nov'21-Current</strong>
+          <div class="hero-visual reveal" data-delay="1">
+            <div class="portrait-frame">
+              <div class="portrait-label mono">01 / OPERATOR</div>
+              <img src="Photo.png" alt="Balamurugan R" />
+              <div class="portrait-card">
+                <span class="mono">CURRENT FOCUS</span>
+                <strong>Platforms that ship with confidence.</strong>
               </div>
-              Software Engineer trained on various technologies like Java
-              Enterprise Edition, DevOps with Cloud AWS
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">J2EE</li>
-                <li class="list-group-item">Spring Boot</li>
-                <li class="list-group-item">Docker & Kubernetes</li>
-                <li class="list-group-item">Amazon Web Services</li>
-              </ul>
             </div>
-          </div>
-
-          <!-- Kauvery Hospital -->
-          <div class="card mb-3">
-            <div class="card-body mx-3">
-              <h4>Kauvery Hospital</h4>
-              <div>
-                <strong>Apr'21-May'21</strong>
+            <div class="terminal-card" aria-label="Decorative terminal window">
+              <div class="terminal-bar"><i></i><i></i><i></i><span>platform-check.sh</span></div>
+              <div class="terminal-body mono">
+                <p><span>$</span> deploy --environment production</p>
+                <p class="terminal-muted">✓ infrastructure validated</p>
+                <p class="terminal-muted">✓ security checks passed</p>
+                <p><span class="terminal-success">● healthy</span> all systems operational</p>
               </div>
-              ensuring the flow in all the processes of Supply Chain Management,
-              worked in Excel
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item">CAPEX</li>
-                <li class="list-group-item">Ms-Excel</li>
-                <li class="list-group-item">Pivot Table</li>
-                <li class="list-group-item">HIS</li>
-              </ul>
             </div>
           </div>
         </div>
+        <div class="scroll-note mono" aria-hidden="true">SCROLL TO EXPLORE <span>↓</span></div>
+      </section>
 
-        <!-- Skills -->
-        <div class="col">
-          <h3 class="mb-3">Skills</h3>
-          <div class="card mb-3 text-bg-success">
-            <div class="card-body mx-3">
-              <h3>Front End</h3>
-              <ul>
-                <li>HTML & CSS</li>
-                <li>Vanilla Javascript</li>
-                <li>Bootstrap</li>
-                <li>Angular</li>
-              </ul>
-            </div>
-          </div>
-
-          <!-- Back End -->
-          <div class="card mb-3 text-bg-dark">
-            <div class="card-body mx-3">
-              <h3>Back End</h3>
-              <ul>
-                <li>Java</li>
-                <li>Python</li>
-                <li>Oracle, MySQL</li>
-                <li>API's</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card mb-3 text-bg-primary">
-            <div class="card-body mx-3">
-              <h3>DevOps</h3>
-              <ul>
-                <li>Docker & Kubernetes</li>
-                <li>Git & GitHub</li>
-                <li>Jenkins</li>
-                <li>Ansible</li>
-                <li>Terraform</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Previous Projects -->
-    <div class="container mt-5" id="projects">
-      <h3>Previous Projects</h3>
-      <div class="row mt-4">
-        <!-- Bug Tracking -->
-        <div class="col-lg-3">
-          <div class="card mb-3" style="height: 22rem">
-            <img
-            src="https://www.cognizantsoftvision.com/wp-content/uploads/2021/02/09201819/image1.jpg"
-            alt="Project Image" class="card-img-top style="height: 11.2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Bug Tracking</h5>
-              <p class="card-text">Employee and Admin managed Bug Tracking</p>
-              <button
-                class="btn btn-outline-danger"
-                type="submit"
-                onsubmit="https://youtu.be/WheMiWbkSoE"
-              >
-                View Project
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- YouTube Channel -->
-        <div class="col-lg-3">
-          <div class="card mb-3" style="height: 22rem">
-            <img
-              src="https://blog.ipleaders.in/wp-content/uploads/2020/12/YouTube-2.png"
-              alt="Project Image"
-              class="card-img-top"
-              style="height: 11.2rem"
-            />
-            <div class="card-body">
-              <h5 class="card-title">YouTube Channel</h5>
-              <p class="card-text">Coding and General Knowledge</p>
-              <button
-                class="btn btn-outline-danger"
-                type="submit"
-                onsubmit="https://youtu.be/WheMiWbkSoE"
-              >
-                View Project
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Portfolio Project -->
-        <!-- <div class="col-lg-3">
-          <div class="card mb-3" style="height: 22rem;">
-            <img src="https://colorlib.com/cdn-cgi/image/width=1100,height=860,fit=crop,quality=80,format=auto,onerror=redirect,metadata=none/wp-content/uploads/sites/2/selfer-dark-wordpress-theme.jpg" alt="Project Image" class="card-img-top" style="height: 11.2rem;">
-            <div class="card-body">
-              <h5 class="card-title">Portfolio</h5>
-              <p class="card-text">Live hosted on GitHub</p>
-              <button class="btn btn-outline-danger" type="submit" onsubmit="https://youtu.be/WheMiWbkSoE">View Project</button>
-            </div>
-          </div>
-        </div> -->
-
-        <!-- EasyKart -->
-        <div class="col-lg-3">
-          <div class="card mb-3" style="height: 22rem">
-            <img
-              src="https://s.tmimgcdn.com/scr/800x500/126100/ecommerce-logo-template_126133-original.png"
-              alt="Project Image"
-              class="card-img-top"
-              style="height: 11.2rem"
-            />
-            <div class="card-body">
-              <h5 class="card-title">EasyKart</h5>
-              <p class="card-text">
-                e-Commerce Application developed using Java
+      <section id="about" class="section about-section">
+        <div class="shell">
+          <div class="section-kicker mono reveal">01 / ABOUT</div>
+          <div class="about-grid">
+            <h2 class="reveal">Engineering the invisible foundations behind great products.</h2>
+            <div class="about-copy reveal" data-delay="1">
+              <p>
+                My work lives where cloud infrastructure, automation, and developer experience meet.
+                I care about systems that are observable, recoverable, and understandable—not just
+                systems that happen to run.
               </p>
-              <button
-                class="btn btn-outline-danger"
-                type="submit"
-                onsubmit="https://youtu.be/WheMiWbkSoE"
-              >
-                View Project
-              </button>
+              <p>
+                Today, my focus is DevOps: removing repetitive work, tightening feedback loops, and
+                helping teams deliver changes without turning every release into an event.
+              </p>
             </div>
           </div>
-        </div>
 
-        <!-- IoT -->
-        <div class="col-lg-3">
-          <div class="card mb-3" style="height: 22rem">
-            <img
-              src="https://circuitdigest.com/sites/default/files/projectimage_mic/IoT-based-Patient-Monitoring-System-using-ESP8266-and-Arduino.jpg"
-              alt="Project Image"
-              class="card-img-top"
-            />
-            <div class="card-body" style="height: 11.2rem">
-              <h5 class="card-title">IoT Project</h5>
-              <p class="card-text">Automatic Health Monitoring System</p>
-              <button
-                class="btn btn-outline-danger"
-                type="submit"
-                onsubmit="https://youtu.be/WheMiWbkSoE"
-              >
-                View Project
-              </button>
-            </div>
+          <div class="principles-grid">
+            <article class="principle reveal">
+              <span class="principle-number mono">01</span>
+              <h3>Automate deliberately</h3>
+              <p>Reduce toil with workflows people can inspect, trust, and improve.</p>
+            </article>
+            <article class="principle reveal" data-delay="1">
+              <span class="principle-number mono">02</span>
+              <h3>Design for recovery</h3>
+              <p>Failures happen. Fast diagnosis and safe rollback should be part of the design.</p>
+            </article>
+            <article class="principle reveal" data-delay="2">
+              <span class="principle-number mono">03</span>
+              <h3>Share the context</h3>
+              <p>Good documentation turns infrastructure from tribal knowledge into a team asset.</p>
+            </article>
           </div>
         </div>
+      </section>
+
+      <section id="expertise" class="section expertise-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <div class="section-kicker mono">02 / EXPERTISE</div>
+              <h2>What I work with</h2>
+            </div>
+            <p>A practical toolkit for building, delivering, and operating modern systems.</p>
+          </div>
+
+          <div class="expertise-grid">
+            <article class="expertise-card expertise-feature reveal">
+              <div class="card-icon" aria-hidden="true">⌁</div>
+              <div>
+                <span class="mono card-index">CORE / 01</span>
+                <h3>Cloud &amp; infrastructure</h3>
+                <p>Designing reproducible environments with infrastructure as code and sensible defaults.</p>
+              </div>
+              <ul class="tag-list"><li>AWS</li><li>Terraform</li><li>Linux</li><li>Networking</li></ul>
+            </article>
+            <article class="expertise-card reveal" data-delay="1">
+              <div class="card-icon" aria-hidden="true">◇</div>
+              <span class="mono card-index">CORE / 02</span>
+              <h3>Containers &amp; orchestration</h3>
+              <p>Packaging workloads consistently and keeping them healthy at scale.</p>
+              <ul class="tag-list"><li>Docker</li><li>Kubernetes</li><li>Helm</li></ul>
+            </article>
+            <article class="expertise-card reveal" data-delay="2">
+              <div class="card-icon" aria-hidden="true">↳</div>
+              <span class="mono card-index">CORE / 03</span>
+              <h3>Delivery automation</h3>
+              <p>Building pipelines that shorten feedback loops without compromising safety.</p>
+              <ul class="tag-list"><li>Jenkins</li><li>GitHub</li><li>Git</li></ul>
+            </article>
+            <article class="expertise-card reveal">
+              <div class="card-icon" aria-hidden="true">◎</div>
+              <span class="mono card-index">CORE / 04</span>
+              <h3>Configuration &amp; scripting</h3>
+              <p>Turning manual runbooks into repeatable, version-controlled operations.</p>
+              <ul class="tag-list"><li>Ansible</li><li>Python</li><li>Shell</li></ul>
+            </article>
+            <article class="expertise-card reveal" data-delay="1">
+              <div class="card-icon" aria-hidden="true">⌁</div>
+              <span class="mono card-index">CORE / 05</span>
+              <h3>Reliability mindset</h3>
+              <p>Using clear signals and practical guardrails to keep production predictable.</p>
+              <ul class="tag-list"><li>Observability</li><li>Incident response</li><li>SRE</li></ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="career" class="section career-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <div class="section-kicker mono">03 / CAREER</div>
+              <h2>Experience &amp; impact</h2>
+            </div>
+            <p>From production support to cloud migration leadership, with reliability as the constant.</p>
+          </div>
+
+          <div class="career-timeline">
+            <article class="career-entry reveal">
+              <div class="career-marker" aria-hidden="true"><span></span></div>
+              <div class="career-meta">
+                <p class="career-date mono">JAN 2026 — PRESENT</p>
+                <span class="current-badge mono"><i></i> CURRENT</span>
+              </div>
+              <div class="career-details">
+                <p class="company-label mono">GOFLUENT INDIA PVT LTD</p>
+                <h3>Senior DevOps Engineer</h3>
+                <p class="career-summary">
+                  The current chapter—building on four years of cloud, platform, and reliability engineering experience.
+                </p>
+              </div>
+            </article>
+
+            <article class="career-entry career-entry-feature reveal">
+              <div class="career-marker" aria-hidden="true"><span></span></div>
+              <div class="career-meta">
+                <p class="career-date mono">DEC 2024 — JAN 2026</p>
+                <p class="career-location mono">CHENNAI, INDIA</p>
+              </div>
+              <div class="career-details">
+                <p class="company-label mono">LEARNSHIP GMBH</p>
+                <h3>Site Reliability Engineer</h3>
+                <p class="career-summary">
+                  Led high-stakes cloud migration and production reliability work across infrastructure,
+                  networking, data, observability, and application delivery.
+                </p>
+
+                <div class="impact-grid">
+                  <div class="impact-item">
+                    <span class="mono">01 / CLOUD MIGRATION</span>
+                    <p>Led the enterprise-wide Azure-to-AWS migration and delivered a production-ready EKS architecture with zero downtime.</p>
+                  </div>
+                  <div class="impact-item">
+                    <span class="mono">02 / KUBERNETES</span>
+                    <p>Designed ingress, service discovery, secrets, autoscaling, and disaster recovery patterns for scalable Kubernetes platforms.</p>
+                  </div>
+                  <div class="impact-item">
+                    <span class="mono">03 / DATA &amp; EDGE</span>
+                    <p>Migrated MySQL and SQL Server workloads with AWS DMS and cutover workflows, while moving global traffic from Akamai to CloudFront.</p>
+                  </div>
+                  <div class="impact-item">
+                    <span class="mono">04 / OBSERVABILITY</span>
+                    <p>Established Datadog APM, logs, RUM, DBM, Kubernetes metrics, and infrastructure alerting across the platform.</p>
+                  </div>
+                  <div class="impact-item">
+                    <span class="mono">05 / RELIABILITY</span>
+                    <p>Owned high-severity incident resolution, RCA, and permanent safeguards across AWS, Kubernetes, networking, databases, and storage.</p>
+                  </div>
+                  <div class="impact-item">
+                    <span class="mono">06 / ENABLEMENT</span>
+                    <p>Built reusable Terraform modules and shell automations, mentored engineers, optimized AWS cost, and documented operational knowledge.</p>
+                  </div>
+                </div>
+
+                <div class="career-callout">
+                  <span class="mono">NOTABLE RECOVERIES</span>
+                  <p>
+                    Restored EC2 access through root-volume recovery, resolved Kubernetes routing conflicts,
+                    and stabilized RabbitMQ message flow during production incidents.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="career-entry reveal">
+              <div class="career-marker" aria-hidden="true"><span></span></div>
+              <div class="career-meta">
+                <p class="career-date mono">NOV 2021 — DEC 2024</p>
+                <p class="career-location mono">CHENNAI, INDIA</p>
+              </div>
+              <div class="career-details">
+                <p class="company-label mono">CAPGEMINI</p>
+                <h3>DevOps Engineer</h3>
+                <p class="career-summary">
+                  Supported enterprise production environments around the clock, combining incident response,
+                  release engineering, Linux administration, and observability.
+                </p>
+                <ul class="career-bullets">
+                  <li>Managed end-to-end ServiceNow incidents and 24×7 production support with a focus on rapid, low-disruption recovery.</li>
+                  <li>Supported CI/CD pipelines across Jenkins, CloudBees CD, Nexus, and UrbanCode Deploy.</li>
+                  <li>Integrated SonarQube and Fortify security scanning into delivery workflows.</li>
+                  <li>Administered Linux environments, monitored applications with New Relic, and created operational runbooks in Confluence.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+
+          <div class="education-row reveal">
+            <div>
+              <p class="mono">EDUCATION</p>
+              <h3>Sengunthar College of Engineering</h3>
+            </div>
+            <p>B.E. Medical Electronics</p>
+            <p class="mono">2017 — 2021</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog" class="section blog-section">
+        <div class="shell">
+          <div class="section-heading reveal">
+            <div>
+              <div class="section-kicker mono">04 / FIELD NOTES</div>
+              <h2>Writing from the workbench</h2>
+            </div>
+            <p>Practical notes on infrastructure, delivery, reliability, and the lessons between them.</p>
+          </div>
+
+          <div class="blog-grid">
+            <article class="post-card post-feature reveal">
+              <div class="post-art post-art-one" aria-hidden="true"><span>~/blog</span><i></i><b>_</b></div>
+              <div class="post-body">
+                <div class="post-meta mono"><span>COMING SOON</span><span>6 MIN READ</span></div>
+                <h3>What belongs in a production-ready delivery pipeline?</h3>
+                <p>A field guide to the checks, guardrails, and feedback that make releases boring—in the best way.</p>
+                <span class="post-link">Read when published <span aria-hidden="true">↗</span></span>
+              </div>
+            </article>
+            <article class="post-card reveal" data-delay="1">
+              <div class="post-art post-art-two" aria-hidden="true">
+                <span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><i></i>
+              </div>
+              <div class="post-body">
+                <div class="post-meta mono"><span>COMING SOON</span><span>KUBERNETES</span></div>
+                <h3>Debugging Kubernetes without guessing</h3>
+                <p>A calm, layer-by-layer approach to understanding why a workload is unhealthy.</p>
+              </div>
+            </article>
+            <article class="post-card reveal" data-delay="2">
+              <div class="post-art post-art-three" aria-hidden="true"><span>{</span><i>plan</i><span>}</span></div>
+              <div class="post-body">
+                <div class="post-meta mono"><span>COMING SOON</span><span>TERRAFORM</span></div>
+                <h3>Infrastructure as code is a team interface</h3>
+                <p>Why readable modules and useful defaults matter as much as a successful apply.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="shell contact-grid">
+          <div class="reveal">
+            <div class="section-kicker mono">05 / CONTACT</div>
+            <h2>Have a system to improve or an idea to ship?</h2>
+          </div>
+          <div class="contact-copy reveal" data-delay="1">
+            <p>I’m always happy to talk about DevOps, cloud platforms, automation, or a difficult production puzzle.</p>
+            <a class="email-link" href="mailto:bmthedev@gmail.com">bmthedev@gmail.com <span aria-hidden="true">↗</span></a>
+            <a class="linkedin-link" href="https://www.linkedin.com/in/bm-r/" target="_blank" rel="noreferrer">
+              Connect on LinkedIn <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <p>© <span data-year></span> Balamurugan R</p>
+        <p class="mono">BUILT WITH INTENT · OPERATED WITH CARE</p>
+        <div class="footer-links"><a href="https://www.linkedin.com/in/bm-r/" target="_blank" rel="noreferrer">LinkedIn</a><a href="#home">Top ↑</a></div>
       </div>
-    </div>
-
-    <!-- nav bar -->
-    <div class="container my-5">
-      <nav>
-        <ul class="nav nav-pills">
-          <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
-          <li class="nav-item">
-            <a href="#projects" class="nav-link">Projects</a>
-          </li>
-          <li class="nav-item"><a href="#" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="#" class="nav-link">Contact Me</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-      crossorigin="anonymous"
-    ></script>
+    </footer>
   </body>
 </html>
